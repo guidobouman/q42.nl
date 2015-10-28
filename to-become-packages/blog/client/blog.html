@@ -5,6 +5,11 @@
       <h1>Blog</h1>
     </header>
 
+    <ul class="blog-tabs">
+      <li><a href="/blog/tagged/tech">Tech</a></li>
+      <li><a href="/blog/tagged/news">{{#if langEn}}News{{else}}Nieuws{{/if}}</a></li>
+    </ul>
+
     <div class="blog block-large">
       {{> blogposts}}
     </div>

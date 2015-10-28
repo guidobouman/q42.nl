@@ -1,7 +1,7 @@
 <template name="blogposts">
   <div class="blog-posts">
     {{#each post}}
-    <div class="blog-item {{#if description}}reblog{{/if}}">
+    <div class="blog-item {{#if description}}reblog{{/if}} {{#each tags}}blog-{{this}} {{/each}}">
       {{#if typeIs "link"}}
         {{#unless description}}
         <!-- link -->
